@@ -29,7 +29,7 @@ export default function Home() {
       <div>
       { posts.map(({id, title, date}: Post) => (
         <>
-        <Link href={'/posts/s{id}'}> {title}</Link>
+        <Link href={'/posts/${id}'}> {title}</Link>
         <br />
         <p> {date}</p>
         <br />
